@@ -3,7 +3,7 @@
 print(10>9)
  True 
 #Booleans 2
- 
+
 print(10==9)
   False
 
@@ -21,5 +21,3 @@ print(bool("abc"))
 
 print(bool(0))
  False
-
- 
