@@ -1,12 +1,24 @@
+#1
 import datetime
-day = datetime.date.today()-datetime.timedelta(5)
-print(f"5 days before {day}")
-yesterday = datetime.date.today()-datetime.timedelta(1)
-today = datetime.date.today()
-tomorrow = datetime.date.today()+datetime.timedelta(1)
-print(f"Yesterday:{yesterday}, Today:{today}, Tomorrow:{tomorrow}")
-micro = datetime.datetime.today().replace(microsecond=0)
+date = datetime.datetime.now() - datetime.timedelta(5)
+print(date)
 
-print("Enter a number:", end=' ')
-n = int(input())
-print(n*86400)
+#2
+import datetime 
+date1 = datetime.datetime.now() - datetime.timedelta(1)
+date2 = datetime.datetime.now() 
+date3 = datetime.datetime.now() + datetime.timedelta(1)
+print(date1, date2, date3)
+
+#3
+import datetime 
+date = datetime.datetime.now().strftime('%Y %m %d %H %I %M %S %f')
+print(date)
+
+#4
+import datetime
+
+date1 = datetime.datetime.now()
+date2 = datetime.datetime.now() - datetime.timedelta(2)
+print((date1 - date2).total_seconds())
+

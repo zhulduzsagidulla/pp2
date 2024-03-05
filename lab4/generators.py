@@ -1,44 +1,69 @@
-import generators
+# #1
+# import generators
+# def zhul(n):
+#     idx = 0
+#     while idx <= n:
+#         yield idx 
+#         idx += 1
+# def dyz(m):
+#     for i in m:
+#         yield i**2
+# a = zhul(int(input()))
+# b = dyz(a)
+# for i in b:
+#     print(i)
+
+# #2
+# def gen(n):
+#     idx = 0
+#     while idx <= n:
+#         yield idx
+#         idx += 1
+# def even(m):
+#     for i in m:
+#         if i%2 == 0:
+#             yield i
+# a = gen(int(input()))
+# b = even(a)
+# for i in b:
+#     print(i)
 
 
-def squares_generator():
-    print("Enter a number:", end=" ")
-    n = int(input())
-    square = (x*x for x in range(n+1))
 
+# #3
+# def gen(n):
+#     idx=0
+#     while idx<=n:
+#         yield idx
+#         idx +=1
 
-def even():
-    print("Enter a number:", end=" ")
-    n = int(input())
-    div = (x for x in range(0, n+1, 2))
-    for i in div:
-        print(i, end=" ")
+# def num(m):
+#     for i in m:
+#         if i %3==0:
+#             if i%4 ==0:
+#                 yield i
 
+# a = gen(int(input()))
+# b= num(a)
+# for i in b:
+#     print(i)
 
-def divided():
-    print("Enter a number:", end=" ")
-    n = int(input())
-    div = (x for x in range(0, n+1, 12))
-    # or div=(x for x in range(n+1) if (x % 12 == 0))
-    for i in div:
-        print(i, end=' ')
+# #4
+# def square(a,b):
+#     for i in range(a,b):
+#         yield i**2
 
+# square1 = square(a = int(input()) , b = int(input()))
+# for i in square1:
+#     print(i)
 
-def rev():
-    l = []
-    print("Enter a number:", end=" ")
-    n = int(input())
-    numbers = range(n, -1, -1)
-    for i in numbers:
-        l.append(i)
-    return l
+#5
+def num(n):
+        i=0
+        while n>=0:
+             yield n
+             n-=1
+numb = num(n= int(input()))
+for i in numb:
+    print(i)
 
-
-def squares():
-    print("Enter a number a :", end=" ")
-    a = int(input())
-    print("Enter a number b :", end=" ")
-    b = int(input())
-    square = (x**2 for x in range(a, b+1))
-    for i in square:
-        print(i, end=" ")
