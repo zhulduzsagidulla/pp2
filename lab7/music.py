@@ -5,7 +5,7 @@ pygame.init()
 screen_width, screen_height = 500, 100
 screen = pygame.display.set_mode((screen_width, screen_height))
 
-Musics = ""
+Musics = "C:\Users\asus\Desktop\lab_pp2\musics"
 music_files = os.listdir(Musics)
 current_music = 0
 pygame.mixer.music.load(Musics + music_files[current_music])
