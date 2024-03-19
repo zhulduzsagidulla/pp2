@@ -8,7 +8,7 @@ height, width = 600, 600
 screen = pygame.display.set_mode((height, width))
 exit = False
 
-Musics = ""
+Musics = "C:\Users\asus\Desktop\lab_pp2\musics"
 List_of_Musics = os.listdir(Musics)
 
 Index, font = 0, pygame.font.SysFont(None, 24)
